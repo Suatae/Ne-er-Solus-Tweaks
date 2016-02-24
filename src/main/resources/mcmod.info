@@ -1,0 +1,16 @@
+[
+{
+  "modid": "NeerSolusTweaks",
+  "name": "Ne'er Solus Tweaks",
+  "description": "Primary mod for Ne'er Solus Questpack",
+  "version": "1.7.10-1.00A",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/Suatae/Ne-er-Solus-Tweaks",
+  "updateUrl": "",
+  "authorList": ["Suatae"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

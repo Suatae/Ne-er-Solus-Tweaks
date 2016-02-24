@@ -1,5 +1,6 @@
 package com.suatae.neersolustweaks;
 
+import com.suatae.neersolustweaks.common.Registry.BlockReg;
 import com.suatae.neersolustweaks.lib.Ref;
 import com.suatae.neersolustweaks.proxy.CommonProxy;
 import com.suatae.neersolustweaks.util.ConfigUtil;
@@ -24,6 +25,8 @@ public class NeerSolusTweaks {
 	public static void PreLoad(FMLPreInitializationEvent event) {
 		FMLCommonHandler.instance().bus().register(new ConfigUtil());
 		ConfigUtil.init(event.getSuggestedConfigurationFile());
+		
+		BlockReg.init();
 		
 		proxy.registerBlockRenders();
 	}
