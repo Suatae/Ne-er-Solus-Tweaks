@@ -30,11 +30,6 @@ public class CropBase extends BlockBush implements IGrowable {
 		maxGrowthStage = MaxGrowthStage;
 
 	}
-	
-	public boolean isOpaqueCube()
-    {
-        return false;
-    }
 
 	@Override
 	public IIcon getIcon(int Side, int GrowthStage) {
@@ -45,7 +40,7 @@ public class CropBase extends BlockBush implements IGrowable {
 		int growStage = world.getBlockMetadata(x, y, z)
 				+ MathHelper.getRandomIntegerInRange(Rand, 2, 5);
 
-		if (growStage > maxGrowthStage && world.isBlockIndirectlyGettingPowered(x, y, z) == true) {
+		if (growStage > maxGrowthStage) {
 			growStage = maxGrowthStage;
 		}
 

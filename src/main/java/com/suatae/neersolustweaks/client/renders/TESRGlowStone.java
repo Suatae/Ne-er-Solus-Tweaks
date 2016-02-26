@@ -1,5 +1,7 @@
 package com.suatae.neersolustweaks.client.renders;
 
+import java.util.Random;
+
 import org.lwjgl.opengl.GL11;
 
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -30,23 +32,23 @@ import com.suatae.neersolustweaks.lib.Ref;
 
 public class TESRGlowStone extends TileEntitySpecialRenderer {
 	
-	private ResourceLocation texture;
+	private ResourceLocation	texture;
 
-	private Crystal00						model00;
-	private Crystal01						model01;
-	private Crystal02						model02;
-	private Crystal03						model03;
-	private Crystal04						model04;
-	private Crystal05						model05;
-	private Crystal06						model06;
-	private Crystal07						model07;
-	private Crystal08						model08;
-	private Crystal09						model09;
-	private Crystal10						model10;
-	private Crystal11						model11;
-	private Crystal12						model12;
-	private Crystal13						model13;
-	private Crystal14						model14;
+	private Crystal00			model00;
+	private Crystal01			model01;
+	private Crystal02			model02;
+	private Crystal03			model03;
+	private Crystal04			model04;
+	private Crystal05			model05;
+	private Crystal06			model06;
+	private Crystal07			model07;
+	private Crystal08			model08;
+	private Crystal09			model09;
+	private Crystal10			model10;
+	private Crystal11			model11;
+	private Crystal12			model12;
+	private Crystal13			model13;
+	private Crystal14			model14;
 
 	public TESRGlowStone() {
 		this.model00 = new Crystal00();
@@ -73,6 +75,7 @@ public class TESRGlowStone extends TileEntitySpecialRenderer {
 	}
 
 	public void renderWorldBlock(TileEntity tileEntity, double x, double y, double z, float f) {
+
 		if (tileEntity.getBlockMetadata() == 0) {
 			GL11.glPushMatrix();
 
@@ -242,6 +245,7 @@ public class TESRGlowStone extends TileEntitySpecialRenderer {
 
 			this.bindTexture(texture);
 			GL11.glRotatef(-180F, 0F, 0F, 1F);
+			//GL11.glRotatef(yRotAngle, 0F, 1F, 0F);
 			GL11.glScalef(1F, 1F, 1F);
 			this.model14.render((Entity) null, 0.0F, 0.0F, -0.1F, 0.0F, 0.0F, 0.0625F);
 			GL11.glPopMatrix();
