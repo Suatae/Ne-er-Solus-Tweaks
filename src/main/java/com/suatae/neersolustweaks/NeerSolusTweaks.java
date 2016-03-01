@@ -2,10 +2,12 @@ package com.suatae.neersolustweaks;
 
 import net.minecraftforge.common.MinecraftForge;
 
-import com.suatae.neersolustweaks.common.event.DeathUrnEvent;
-import com.suatae.neersolustweaks.common.event.EventHandler;
-import com.suatae.neersolustweaks.common.registry.BlockReg;
-import com.suatae.neersolustweaks.common.registry.ItemReg;
+import com.suatae.neersolustweaks.common.init.BlockReg;
+import com.suatae.neersolustweaks.common.init.ItemReg;
+import com.suatae.neersolustweaks.crafting.BasicCraftingHandler;
+import com.suatae.neersolustweaks.crafting.RecipeRemover;
+import com.suatae.neersolustweaks.event.DeathUrnEvent;
+import com.suatae.neersolustweaks.event.EventHandler;
 import com.suatae.neersolustweaks.lib.Ref;
 import com.suatae.neersolustweaks.proxy.CommonProxy;
 import com.suatae.neersolustweaks.util.ConfigUtil;
@@ -42,6 +44,8 @@ public class NeerSolusTweaks {
 	public static void Load(FMLInitializationEvent event) {
 		
 		EventHandler.init();
+		RecipeRemover.removeRecipe();
+		BasicCraftingHandler.shapedRecipes();
 		
 	}
 

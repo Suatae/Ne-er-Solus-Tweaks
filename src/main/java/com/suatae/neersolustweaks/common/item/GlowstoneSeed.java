@@ -9,8 +9,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 
+import com.suatae.neersolustweaks.common.init.BlockReg;
 import com.suatae.neersolustweaks.common.init.ItemBase;
-import com.suatae.neersolustweaks.common.registry.BlockReg;
 import com.suatae.neersolustweaks.lib.Ref;
 
 public class GlowstoneSeed extends ItemBase implements IPlantable{

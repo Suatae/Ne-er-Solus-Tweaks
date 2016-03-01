@@ -2,7 +2,7 @@ package com.suatae.neersolustweaks.common.tileentity;
 
 import java.util.Random;
 
-import com.suatae.neersolustweaks.common.registry.BlockReg;
+import com.suatae.neersolustweaks.common.init.BlockReg;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;

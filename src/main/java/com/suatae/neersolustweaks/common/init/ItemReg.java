@@ -1,4 +1,4 @@
-package com.suatae.neersolustweaks.common.registry;
+package com.suatae.neersolustweaks.common.init;
 
 import com.suatae.neersolustweaks.common.item.GlowstoneSeed;
 

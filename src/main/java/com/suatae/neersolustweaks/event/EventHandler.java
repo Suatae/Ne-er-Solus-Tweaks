@@ -1,4 +1,4 @@
-package com.suatae.neersolustweaks.common.event;
+package com.suatae.neersolustweaks.event;
 
 import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.event.FMLInitializationEvent;

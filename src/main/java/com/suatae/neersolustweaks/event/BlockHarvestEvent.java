@@ -1,4 +1,4 @@
-package com.suatae.neersolustweaks.common.event;
+package com.suatae.neersolustweaks.event;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;

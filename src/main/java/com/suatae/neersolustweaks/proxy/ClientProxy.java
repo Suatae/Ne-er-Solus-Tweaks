@@ -8,7 +8,7 @@ import net.minecraftforge.client.MinecraftForgeClient;
 import com.suatae.neersolustweaks.client.renders.TESRDeathUrn;
 import com.suatae.neersolustweaks.client.renders.TESRGlowStone;
 import com.suatae.neersolustweaks.client.renders.ir.blocks.IRDeathUrn;
-import com.suatae.neersolustweaks.common.registry.BlockReg;
+import com.suatae.neersolustweaks.common.init.BlockReg;
 import com.suatae.neersolustweaks.common.tileentity.TileEntityDeathUrn;
 import com.suatae.neersolustweaks.common.tileentity.TileEntityGSCrystal;
 

@@ -19,7 +19,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import com.suatae.neersolustweaks.client.creativetab.NeerSolusTab;
 import com.suatae.neersolustweaks.common.init.CropBase;
-import com.suatae.neersolustweaks.common.registry.ItemReg;
+import com.suatae.neersolustweaks.common.init.ItemReg;
 import com.suatae.neersolustweaks.common.tileentity.TileEntityGSCrystal;
 import com.suatae.neersolustweaks.lib.Ref;
 

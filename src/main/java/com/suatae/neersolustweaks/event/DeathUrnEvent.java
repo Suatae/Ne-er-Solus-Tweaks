@@ -1,8 +1,8 @@
-package com.suatae.neersolustweaks.common.event;
+package com.suatae.neersolustweaks.event;
 
 import java.util.Iterator;
 
-import com.suatae.neersolustweaks.common.registry.BlockReg;
+import com.suatae.neersolustweaks.common.init.BlockReg;
 import com.suatae.neersolustweaks.common.tileentity.TileEntityDeathUrn;
 
 import net.minecraft.entity.item.EntityItem;
