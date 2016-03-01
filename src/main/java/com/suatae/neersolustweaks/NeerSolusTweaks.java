@@ -2,7 +2,8 @@ package com.suatae.neersolustweaks;
 
 import net.minecraftforge.common.MinecraftForge;
 
-import com.suatae.neersolustweaks.common.event.DeathUrn;
+import com.suatae.neersolustweaks.common.event.DeathUrnEvent;
+import com.suatae.neersolustweaks.common.event.EventHandler;
 import com.suatae.neersolustweaks.common.registry.BlockReg;
 import com.suatae.neersolustweaks.common.registry.ItemReg;
 import com.suatae.neersolustweaks.lib.Ref;
@@ -32,16 +33,21 @@ public class NeerSolusTweaks {
 		
 		BlockReg.init();
 		ItemReg.init();
+		EventHandler.preInit();
 		
 		proxy.registerBlockRenders();
 	}
 
 	@Mod.EventHandler
 	public static void Load(FMLInitializationEvent event) {
-		MinecraftForge.EVENT_BUS.register(new DeathUrn());
+		
+		EventHandler.init();
+		
 	}
 
 	@Mod.EventHandler
-	public static void PostLoad(FMLPostInitializationEvent event) {}
+	public static void PostLoad(FMLPostInitializationEvent event) {
+		EventHandler.postInit();
+	}
 
 }
