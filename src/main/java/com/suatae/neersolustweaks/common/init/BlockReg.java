@@ -18,8 +18,9 @@ public class BlockReg {
 	public static void init(){
 		GameRegistry.registerBlock(blockCrystalCrop, "blockGSCrystalCrop");
 		GameRegistry.registerBlock(blockDeathUrn, "blockDeathUrn");
-		GameRegistry.registerTileEntity(TileEntityGSCrystal.class, "TileEntityCrystalCrop");
-		GameRegistry.registerTileEntity(TileEntityDeathUrn.class, "TileEntityDeathUrn");
 		
+		
+		GameRegistry.registerTileEntity(TileEntityGSCrystal.class, "TileEntityGSCrystal");
+		GameRegistry.registerTileEntity(TileEntityDeathUrn.class, "TileEntityDeathUrn");		
 	}
 }

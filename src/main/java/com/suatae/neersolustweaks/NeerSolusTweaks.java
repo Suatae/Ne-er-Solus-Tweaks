@@ -33,20 +33,21 @@ public class NeerSolusTweaks {
 		FMLCommonHandler.instance().bus().register(new ConfigUtil());
 		ConfigUtil.init(event.getSuggestedConfigurationFile());
 		
-		BlockReg.init();
-		ItemReg.init();
+		
 		EventHandler.preInit();
 		
-		proxy.registerBlockRenders();
+		
 	}
 
 	@Mod.EventHandler
 	public static void Load(FMLInitializationEvent event) {
 		
+		BlockReg.init();
+		ItemReg.init();
 		EventHandler.init();
 		RecipeRemover.removeRecipe();
 		BasicCraftingHandler.shapedRecipes();
-		
+		proxy.registerRenders();
 	}
 
 	@Mod.EventHandler

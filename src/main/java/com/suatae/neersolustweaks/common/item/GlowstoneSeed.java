@@ -24,19 +24,18 @@ public class GlowstoneSeed extends ItemBase implements IPlantable{
 	}
 	
 	@Override
-	public boolean onItemUse(ItemStack ItemStack, EntityPlayer Player, World world, int x, int y,
+	public boolean onItemUse(ItemStack stack, EntityPlayer player, World world, int x, int y,
 			int z, int par7, float par8, float par9, float par10) {
-		if (par7 != 1){
+		if (par7 != 0){
 			return false;
 		}
 		else
-			if(Player.canPlayerEdit(x, y+1, z, par7, ItemStack)){
-				Block plantBlock = world.getBlock(x, y+1, z);
-				if(!(plantBlock !=Blocks.air)){
+			if(player.canPlayerEdit(x, y-1, z, par7, stack)){
+				if(world.isAirBlock(x, y-1, z)){
 					Block soilBlock = world.getBlock(x, y, z);
 					if(!(soilBlock !=soil)){
-						world.setBlock(x, y+1, z, plant);
-						--ItemStack.stackSize;
+						world.setBlock(x, y-1, z, plant);
+						--stack.stackSize;
 					}
 					return true;
 				}

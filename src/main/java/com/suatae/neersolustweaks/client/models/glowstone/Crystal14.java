@@ -10,6 +10,7 @@ import org.lwjgl.opengl.GL11;
 
 
 
+
 /**
  * Crystal - Suatae Created using Tabula 4.1.1
  */
@@ -434,6 +435,7 @@ public class Crystal14 extends ModelBase {
 		GL11.glPopMatrix();
 	}
 
+	
 	/**
 	 * This is a helper function from Tabula to set the rotation of model parts
 	 */

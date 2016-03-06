@@ -32,9 +32,6 @@ public class DeathUrn extends BlockContainer{
 		this.setHardness(1.5F);
 		this.setResistance(10.0F);
 		this.setBlockBounds(0.125F, 0F, 0.125F, 0.875F, 1F, 0.875F);
-		
-		
-
 	}
 	
 	public boolean canBlockGrass(){

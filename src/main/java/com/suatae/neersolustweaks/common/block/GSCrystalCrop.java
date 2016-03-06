@@ -1,17 +1,20 @@
 package com.suatae.neersolustweaks.common.block;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.World;
@@ -37,7 +40,7 @@ public class GSCrystalCrop  extends CropBase implements ITileEntityProvider{
 		this.setLightLevel(1F);
 		this.setHardness(1.5F);
 		this.setResistance(10.0F);
-		this.setBlockBounds(0F, 0F, 0F, 1F, 1F, 1F);
+		this.setBlockBounds(0F, .4F, 0F, 1F, 1F, 1F);
 
 	}
 	
@@ -46,6 +49,12 @@ public class GSCrystalCrop  extends CropBase implements ITileEntityProvider{
 	public TileEntity createNewTileEntity(World world, int var2) {
 		return new TileEntityGSCrystal();
 	}
+	
+	@Override
+	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+    {
+        return AxisAlignedBB.getBoundingBox((double)x + this.minX, (double)y + this.minY, (double)z + this.minZ, (double)x + this.maxX, (double)y + this.maxY, (double)z + this.maxZ);
+    }
 	
 	public boolean canBlockStay(World world, int x, int y, int z)
     {
@@ -63,49 +72,8 @@ public class GSCrystalCrop  extends CropBase implements ITileEntityProvider{
 	
 	@Override
 	protected boolean canPlaceBlockOn(Block Block) {
-		return Block == Blocks.netherrack;
+		return false;
 	}
-	
-//	@Override
-//	@SideOnly(Side.CLIENT)
-//	public void randomDisplayTick(World world, int X, int Y, int Z, Random ran) {
-//		super.randomDisplayTick(world, X, Y, Z, ran);
-//		double d0 = X + ran.nextFloat();
-//		double d1 = Y + 0.5F;
-//		double d2 = Z + ran.nextFloat();
-//		double d3 = 1.0D; // Color R
-//		double d4 = 1.0D; // Color G
-//		double d5 = 0.0D; // Color B
-//
-//		double d6 = X + 0.0F + (6.0F * ran.nextFloat());
-//		double d6m = X + 0.0F + (-6.0F * ran.nextFloat());
-//		double d7 = Y + 0.0F + (2.0F * ran.nextFloat());
-//		double d8 = Z + 0.0F + (6.0F * ran.nextFloat());
-//		double d8m = Z + 0.0F + (-6.0F * ran.nextFloat());
-//		double d9 = Y + 0.0F + (-2.0F * ran.nextFloat());
-//
-//		double d10 = 5.0F + (ran.nextFloat());
-//		double d11 = Y + 0.9F;
-//		double d12 = 4.8F;
-//		double d13 = 0.0D; // Velocity
-//		double d14 = 0.0D; // Velocity
-//		double d15 = 0.0D; // Velocity
-//
-//		if (getPlantMetadata(world, X, Y, Z) == maxGrowthStage) {
-//			world.spawnParticle("mobSpell", d0, d1, d2, d3, d4, d5);
-//		}
-//
-//		if (getPlantMetadata(world, X, Y, Z) >= maxGrowthStage - 4) {
-//			world.spawnParticle("townaura", d6, d7, d8, d3, d4, d5);
-//			world.spawnParticle("townaura", d6, d9, d8, d3, d4, d5);
-//			world.spawnParticle("townaura", d6m, d7, d8m, d3, d4, d5);
-//			world.spawnParticle("townaura", d6m, d9, d8m, d3, d4, d5);
-//			world.spawnParticle("townaura", d6, d7, d8m, d3, d4, d5);
-//			world.spawnParticle("townaura", d6, d9, d8m, d3, d4, d5);
-//			world.spawnParticle("townaura", d6m, d7, d8, d3, d4, d5);
-//			world.spawnParticle("townaura", d6m, d9, d8, d3, d4, d5);
-//		}
-//	};
 
 	@Override
 	public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
