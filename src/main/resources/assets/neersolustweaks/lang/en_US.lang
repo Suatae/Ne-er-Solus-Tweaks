@@ -4,4 +4,10 @@ tile.neersolustweaks:blockGSCrystalCrop.name=Glowstone
 tile.neersolustweaks:blockGSCrystalOre.name=Glowstone
 tile.neersolustweaks:blockDeathUrn.name=Death Urn
 
+tile.neersolustweaks:blockRoadStone.name=Stone Road
+tile.neersolustweaks:blockRoadStoneSlab.name=Stone Road Slab
+
+tile.neersolustweaks:blockRoaddirt.name=Dirt Road
+tile.neersolustweaks:blockRoaddirtSlab.name=Dirt Road Slab
+
 itemGroup.NeerSolusTweaks=Ne'er Solus Tweaks

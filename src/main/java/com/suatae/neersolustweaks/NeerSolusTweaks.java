@@ -9,6 +9,7 @@ import com.suatae.neersolustweaks.crafting.RecipeRemover;
 import com.suatae.neersolustweaks.event.DeathUrnEvent;
 import com.suatae.neersolustweaks.event.EventHandler;
 import com.suatae.neersolustweaks.lib.Ref;
+import com.suatae.neersolustweaks.network.DescriptionHandler;
 import com.suatae.neersolustweaks.proxy.CommonProxy;
 import com.suatae.neersolustweaks.util.ConfigUtil;
 
@@ -48,6 +49,8 @@ public class NeerSolusTweaks {
 		RecipeRemover.removeRecipe();
 		BasicCraftingHandler.shapedRecipes();
 		proxy.registerRenders();
+		
+		DescriptionHandler.init();
 	}
 
 	@Mod.EventHandler
