@@ -48,6 +48,8 @@ public class NeerSolusTweaks {
 		EventHandler.init();
 		RecipeRemover.removeRecipe();
 		BasicCraftingHandler.shapedRecipes();
+		BasicCraftingHandler.shapelessRecipes();
+		BasicCraftingHandler.forgeRecipes();
 		proxy.registerRenders();
 		
 		DescriptionHandler.init();

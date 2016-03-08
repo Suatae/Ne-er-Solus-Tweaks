@@ -10,4 +10,42 @@ tile.neersolustweaks:blockRoadStoneSlab.name=Stone Road Slab
 tile.neersolustweaks:blockRoaddirt.name=Dirt Road
 tile.neersolustweaks:blockRoaddirtSlab.name=Dirt Road Slab
 
+tile.neersolustweaks:blockHObsidian.name=Hardened Obsidian
+
+tile.neersolustweaks:blockDirt_0.name=Compressed Dirt
+tile.neersolustweaks:blockDirt_1.name=Double Compressed Dirt
+tile.neersolustweaks:blockDirt_2.name=Triple Compressed Dirt
+tile.neersolustweaks:blockDirt_3.name=Quadruple Compressed Dirt
+tile.neersolustweaks:blockDirt_4.name=Quintuple Compressed Dirt
+tile.neersolustweaks:blockDirt_5.name=Sextuple Compressed Dirt
+tile.neersolustweaks:blockDirt_6.name=Septuple Compressed Dirt
+tile.neersolustweaks:blockDirt_7.name=Octuple Compressed Dirt
+
+tile.neersolustweaks:blockSand_0.name=Compressed Sand
+tile.neersolustweaks:blockSand_1.name=Double Compressed Sand
+tile.neersolustweaks:blockSand_2.name=Triple Compressed Sand
+tile.neersolustweaks:blockSand_3.name=Quadruple Compressed Sand
+tile.neersolustweaks:blockSand_4.name=Quintuple Compressed Sand
+tile.neersolustweaks:blockSand_5.name=Sextuple Compressed Sand
+tile.neersolustweaks:blockSand_6.name=Septuple Compressed Sand
+tile.neersolustweaks:blockSand_7.name=Octuple Compressed Sand
+
+tile.neersolustweaks:blockGravel_0.name=Compressed Gravel
+tile.neersolustweaks:blockGravel_1.name=Double Compressed Gravel
+tile.neersolustweaks:blockGravel_2.name=Triple Compressed Gravel
+tile.neersolustweaks:blockGravel_3.name=Quadruple Compressed Gravel
+tile.neersolustweaks:blockGravel_4.name=Quintuple Compressed Gravel
+tile.neersolustweaks:blockGravel_5.name=Sextuple Compressed Gravel
+tile.neersolustweaks:blockGravel_6.name=Septuple Compressed Gravel
+tile.neersolustweaks:blockGravel_7.name=Octuple Compressed Gravel
+
+tile.neersolustweaks:blockCobble_0.name=Compressed Cobblestone
+tile.neersolustweaks:blockCobble_1.name=Double Compressed Cobblestone
+tile.neersolustweaks:blockCobble_2.name=Triple Compressed Cobblestone
+tile.neersolustweaks:blockCobble_3.name=Quadruple Compressed Cobblestone
+tile.neersolustweaks:blockCobble_4.name=Quintuple Compressed Cobblestone
+tile.neersolustweaks:blockCobble_5.name=Sextuple Compressed Cobblestone
+tile.neersolustweaks:blockCobble_6.name=Septuple Compressed Cobblestone
+tile.neersolustweaks:blockCobble_7.name=Octuple Compressed Cobblestone
+
 itemGroup.NeerSolusTweaks=Ne'er Solus Tweaks

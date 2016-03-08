@@ -29,12 +29,12 @@ import com.suatae.neersolustweaks.lib.Ref;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class GSCrystalCrop  extends CropBase implements ITileEntityProvider{
+public class BlockGSCrystalCrop  extends CropBase implements ITileEntityProvider{
 	
-	public GSCrystalCrop() {
+	public BlockGSCrystalCrop() {
 		super(Material.rock, 14);
 		this.setBlockName(Ref.Name.Block.GSC);
-		this.setBlockTextureName(Ref.Name.Block.GSC);
+		this.setBlockTextureName(Ref.Name.Block.GSC_T);
 		this.setCreativeTab(NeerSolusTab.NeerSolus_TAB);
 		this.setStepSound(Block.soundTypeGlass);
 		this.setLightLevel(1F);
@@ -102,21 +102,21 @@ public class GSCrystalCrop  extends CropBase implements ITileEntityProvider{
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister parIIconRegister) {
 		iIcon = new IIcon[maxGrowthStage + 1];
-		iIcon[0] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[1] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[2] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[3] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[4] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[5] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[6] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[7] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[8] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[9] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[10] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[11] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[12] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[13] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
-		iIcon[14] = parIIconRegister.registerIcon(Ref.Name.Block.GSC);
+		iIcon[0] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[1] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[2] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[3] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[4] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[5] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[6] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[7] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[8] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[9] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[10] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[11] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[12] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[13] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
+		iIcon[14] = parIIconRegister.registerIcon(Ref.Name.Block.GSC_T);
 	}
 
 	@Override

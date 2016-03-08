@@ -20,10 +20,10 @@ import net.minecraft.tileentity.TileEntityDispenser;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.world.World;
 
-public class DeathUrn extends BlockContainer{
+public class BlockDeathUrn extends BlockContainer{
 
 	protected Random ran = new Random();
-	public DeathUrn() {
+	public BlockDeathUrn() {
 		super(Material.rock);
 		this.setBlockName(Ref.Name.Block.DU);
 		this.setBlockTextureName(Ref.Name.Block.DU_T);
